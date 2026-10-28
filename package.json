@@ -1,0 +1,19 @@
+{
+  "name": "@quiqsol/mcp",
+  "version": "1.0.0",
+  "description": "Connect QuiQSol to Claude, ChatGPT, Cursor and any AI agent: a local MCP server (stdio) and the quiqsol command line, on top of the QuiQSol remote MCP server.",
+  "license": "MIT",
+  "author": "QuiQSol <developers@quiqsol.com>",
+  "homepage": "https://quiqsol.com/developers/ai-agents",
+  "repository": { "type": "git", "url": "git+https://github.com/Asholamide/quiqsol-mcp.git" },
+  "bugs": { "url": "https://github.com/Asholamide/quiqsol-mcp/issues" },
+  "keywords": ["quiqsol", "mcp", "model-context-protocol", "claude", "chatgpt", "cursor", "ai-agents", "crm", "helpdesk", "whatsapp", "invoices", "cli"],
+  "mcpName": "com.quiqsol/quiqsol",
+  "type": "commonjs",
+  "bin": { "quiqsol": "bin/quiqsol.js" },
+  "main": "src/client.js",
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "publishConfig": { "access": "public" }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "com.quiqsol/quiqsol",
+  "title": "QuiQSol",
+  "description": "Work in QuiQSol from any AI agent: CRM, Help Desk, inbox, invoices, projects, forms and analytics.",
+  "version": "1.0.0",
+  "websiteUrl": "https://quiqsol.com/developers/ai-agents",
+  "repository": { "url": "https://github.com/Asholamide/quiqsol-mcp", "source": "github" },
+  "remotes": [{ "type": "streamable-http", "url": "https://api.quiqsol.com/mcp" }],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@quiqsol/mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "packageArguments": [{ "type": "positional", "value": "mcp" }],
+      "environmentVariables": [
+        { "name": "QUIQSOL_API_KEY", "description": "An AI agent API key from QuiQSol Settings > Developer Platform.", "isRequired": true, "isSecret": true }
+      ]
+    }
+  ]
+}
